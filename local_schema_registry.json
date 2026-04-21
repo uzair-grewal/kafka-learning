@@ -1,0 +1,45 @@
+{
+    "student_updates-value": {
+        "id": 1,
+        "schema": {
+            "type": "record",
+            "name": "StudentNotification",
+            "namespace": "com.school.notifications",
+            "fields": [
+                {
+                    "name": "metadata",
+                    "type": {
+                        "type": "record",
+                        "name": "EventMetadata",
+                        "fields": [
+                            {
+                                "name": "notification_id",
+                                "type": "int"
+                            },
+                            {
+                                "name": "timestamp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "status",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "student_id",
+                    "type": "int"
+                },
+                {
+                    "name": "action_type",
+                    "type": "string"
+                },
+                {
+                    "name": "payload",
+                    "type": "string"
+                }
+            ]
+        }
+    }
+}
